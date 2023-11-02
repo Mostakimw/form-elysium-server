@@ -52,7 +52,6 @@ const getSpecificFormData = async (req, res) => {
 
 const deleteFormData = async (req, res) => {
   const formId = req.query.formId;
-  console.log(formId);
   const client = await connectToMongoDB();
   const formCollection = client.db("formElysium").collection("forms");
 
